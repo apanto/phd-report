@@ -202,7 +202,7 @@ def main():
             for account in accounts:
                 account_IDs.append(account['Id'])
 
-            write_events(account_IDs, wb, role, start_date, end_date)
+            write_events(account_IDs, wb, start_date, end_date, role)
 
             write_accounts(wb, accounts)
     else:
